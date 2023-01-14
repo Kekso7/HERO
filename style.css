@@ -1,0 +1,164 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+:root {
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Purple: rgb(110, 12, 248);
+    
+    
+}
+
+/* Pozadina */
+body {
+    background-color: var(--Pale-blue);
+   
+}
+
+/* Oblik */
+
+.container {
+    margin: 2rem auto;
+    width: 360px;
+    height: 35rem;
+    background-color: white;
+    border-radius: 2rem;
+    overflow: hidden;
+    box-shadow: 0px 1px 23px rgba(204, 199, 199, 0.699);
+}
+
+/* Text */
+
+.content{
+    width: 80%;
+    margin: 0 auto;
+    font-size: small;
+    padding-top: 40px;
+   
+}
+
+.title{
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--Dark-blue);
+
+}
+
+.text {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: var(--Desaturated-blue);
+}
+
+
+/* Slika */
+
+.card img{
+    width: 100%;
+    
+}
+
+/* Cena, icon */
+
+
+.price{
+    background-color: var(--Very-pale-blue);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+}
+
+.price .icon img{
+   
+   padding: 1rem;
+
+}
+
+.price p{
+    
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+     
+}
+
+.plan{
+    font-weight: bold;
+    color: var(--Dark-blue);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.new-price{
+   color: var(--Desaturated-blue);
+   font-weight: 100;
+   
+}
+
+.price a{
+   
+    color: var(--Purple);
+    margin-left: 50px;
+   
+}
+
+.price a:hover{
+    text-decoration: none;
+    color: var(--Bright-blue);
+}
+
+/* Klik */
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--Bright-blue);
+    font-weight: 800;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+.button:active, .button:hover{
+    background-color: var(--Purple);
+}
+
+
+.cancel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+    width: 100%;
+    border: none;
+    color: var(--Desaturated-blue);
+    background-color: white;
+    
+}
+
+.cancel:active, .cancel:hover{
+    color: var(--Dark-blue);
+
+}
